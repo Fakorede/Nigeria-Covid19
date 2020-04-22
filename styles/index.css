@@ -1,12 +1,16 @@
-.bg{
-    background-image: url("https://wallpaperaccess.com/full/1267640.jpg");
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.95;
-    color: azure;
+.bg {
+  background-image: url("https://wallpaperaccess.com/full/1267640.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.95;
+  color: azure;
 }
 
-.box1{
-    width:40%
+.box1 {
+  width: 40%;
+}
+
+.bg-color {
+  background-color: #111d11;
 }

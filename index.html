@@ -8,60 +8,86 @@
       name="description"
       content="A simple webpage showing the key figures of Covid-19 cases in real time as reported by NCDC."
     />
-    <!-- <link rel="shortcut icon" href="logo.png" type="image/x-icon" /> -->
+    <link
+      rel="shortcut icon"
+      href="https://corona.lmao.ninja/assets/img/flags/ng.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="styles/index.css" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <title>Nigeria | COVID-19 CASE UPDATE</title>
   </head>
   <body class="bg m-2">
-
     <script src="scripts/index.js"></script>
 
     <div class="container text-center">
       <div>
-        <img src="https://www.newsmonger.com.ng/wp-content/uploads/2020/03/NCDC-1024x293-1.png" alt="Nigerian Coat of Arms" height="120px" class="m-2"/>
+        <img
+          src="https://www.newsmonger.com.ng/wp-content/uploads/2020/03/NCDC-1024x293-1.png"
+          alt="Nigerian Coat of Arms"
+          height="120px"
+          class="m-2"
+        />
         <!-- <img src="" alt="NCDC Logo" /> -->
       </div>
 
       <h1 class="font-weight-bold">COVID-19 CASE UPDATE</h1>
 
-      <div class="container bg-dark p-5 ">
-          <h2 class="text-warning font-weight-bold">38 NEW CASE CONFIRMED</h2>
+      <div class="container p-5 bg-color">
+        <h2 class="text-warning font-weight-bold">
+          <span id="new"></span> NEW CASES CONFIRMED
+        </h2>
 
-          <p id="date"></p>
+        <p id="date"></p>
 
-          <div class="font-weight-bold">
+        <div class="font-weight-bold">
+          <h2 class="row text-dark justify-content-center ">
+            <span class="col-md-6 rounded bg-warning p-2 m-2"
+              >TOTAL CONFIRMED</span
+            >
+            <span class="col-md-2 rounded bg-warning p-2 m-2" id="total"
+              >0</span
+            >
+          </h2>
 
-              <h2 class="row text-dark justify-content-center ">
-                <span class="col-md-6 rounded bg-warning p-2 m-2">TOTAL CONFIRMED</span>
-                <span class="col-md-2 rounded bg-warning p-2 m-2" id="total">0</span>
-              </h2>
+          <h2 class="row justify-content-center">
+            <span class="col-md-6 rounded bg-success p-2 m-2">DISCHARGED</span>
+            <span class="col-md-2 rounded bg-success p-2 m-2" id="discharged"
+              >0</span
+            >
+          </h2>
 
-              <h2 class="row justify-content-center">
-                <span class="col-md-6 rounded bg-success p-2 m-2">DISCHARGED</span>
-                <span class="col-md-2 rounded bg-success p-2 m-2" id="discharged">0</span>
-              </h2>
-
-              <h2 class="row justify-content-center">
-                <span class="col-md-6 rounded bg-danger p-2 m-2">DEATHS</span>
-                <span class="col-md-2 rounded bg-danger p-2 m-2" id="deaths">0</span>
-              </h2>
-
-          </div>
+          <h2 class="row justify-content-center">
+            <span class="col-md-6 rounded bg-danger p-2 m-2">DEATHS</span>
+            <span class="col-md-2 rounded bg-danger p-2 m-2" id="deaths"
+              >0</span
+            >
+          </h2>
+        </div>
       </div>
 
       <h2 class="font-weight-normal">NCDC Toll-free Number: 080097000010</h2>
-      <p>Twitter/Facebook: @NCDCgov/COVID19.NCDC.GOV.NG</p>
+      <p>
+        Twitter/Facebook:
+        <a href="https://twitter.com/NCDCgov">@NCDCgov</a>/<a
+          href="https://covid19.ncdc.gov.ng/"
+          >COVID19.NCDC.GOV.NG</a
+        >
+      </p>
     </div>
 
     <footer class="text-center">
       <p>
         Made with 💚 by
-        <a href="https://fakorede.github.io/">Fakorede Abiola</a>. Last Updated
-        - <span id="last_update"></span>
+        <a href="https://fakorede.github.io/">Fakorede Abiola</a>
       </p>
     </footer>
   </body>
