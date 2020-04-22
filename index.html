@@ -8,7 +8,7 @@
       name="description"
       content="A simple webpage showing the key figures of Covid-19 cases in real time as reported by NCDC."
     />
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <!-- <link rel="shortcut icon" href="logo.png" type="image/x-icon" /> -->
     <link rel="stylesheet" href="styles/index.css" />
 
     <!-- Bootstrap CSS -->
@@ -37,17 +37,17 @@
 
               <h2 class="row text-dark justify-content-center ">
                 <span class="col-md-6 rounded bg-warning p-2 m-2">TOTAL CONFIRMED</span>
-                <span class="col-md-2 rounded bg-warning p-2 m-2" >655</span>
+                <span class="col-md-2 rounded bg-warning p-2 m-2" id="total">0</span>
               </h2>
 
               <h2 class="row justify-content-center">
-                <span class="col-md-6 rounded bg-success p-2 m-2">DISCHARGED 188</span>
-                <span class="col-md-2 rounded bg-success p-2 m-2">188</span>
+                <span class="col-md-6 rounded bg-success p-2 m-2">DISCHARGED</span>
+                <span class="col-md-2 rounded bg-success p-2 m-2" id="discharged">0</span>
               </h2>
 
               <h2 class="row justify-content-center">
-                <span class="col-md-6 rounded bg-danger p-2 m-2">DEATHS 22</span>
-                <span class="col-md-2 rounded bg-danger p-2 m-2">22</span>
+                <span class="col-md-6 rounded bg-danger p-2 m-2">DEATHS</span>
+                <span class="col-md-2 rounded bg-danger p-2 m-2" id="deaths">0</span>
               </h2>
 
           </div>
