@@ -9,6 +9,8 @@ request.onload = function() {
         document.getElementById('total').textContent=data.cases;
         document.getElementById('discharged').textContent=data.recovered;
         document.getElementById('deaths').textContent=data.deaths;
+
+        document.getElementById('date').textContent=new Date(data.updated).toDateString();
     }
 }
 
