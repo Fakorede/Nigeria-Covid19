@@ -1,6 +1,10 @@
 var request = new XMLHttpRequest();
 
-request.open("GET", "https://corona.lmao.ninja/v2/countries/NG", true);
+request.open(
+  "GET",
+  "https://corona.lmao.ninja/v2/countries/NG?yesterday=true",
+  true
+);
 
 request.onload = function() {
   var data = JSON.parse(this.response);
